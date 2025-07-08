@@ -54,7 +54,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-5 text-muted-foreground">
             <Link
-              href="https://www.instagram.com/creativedrey1?igsh=MWc0enBqMGQ1cWV5eg=="
+              href="https://www.tiktok.com/@creativedreyy?_t=ZS-8xfjLFcuiST&_r=1"
               target="_blank"
             >
               <TiktokLogo className="h-5 w-5" />
@@ -66,7 +66,7 @@ const Footer = () => {
               <FacebookLogo className="h-5 w-5" />
             </Link>
             <Link
-              href="https://www.tiktok.com/@creativedreyy?_t=ZS-8xfjLFcuiST&_r=1"
+              href="https://www.instagram.com/creativedrey1?igsh=MWc0enBqMGQ1cWV5eg=="
               target="_blank"
             >
               <InstagramLogo className="h-5 w-5" />
