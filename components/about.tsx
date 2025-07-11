@@ -19,7 +19,7 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-4 tracking-tight">
               Ayomide Dare
             </h2>
-            <h2 className="text-3xl font-bold mb-4 tracking-tight">
+            <h2 className="text-2xl font-semibold text-slate-800 mb-4 tracking-tight">
               Passionate about creating impactful web experiences
             </h2>
             <p className="text-gray-700 mb-6 text-justify">

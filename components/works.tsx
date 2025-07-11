@@ -1,39 +1,44 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import { GithubLogo } from "./icons";
+import { getData } from "@/lib/get-data";
+import { Work } from "@/types";
 
 interface ProjectCardProps {
   title: string;
   description: string;
-  image: string;
+  imageUrl: string;
 }
 
-const ProjectCard = ({ title, description, image }: ProjectCardProps) => {
+const baseUrl = "https://ibetalife-admin.vercel.app/api";
+
+const ProjectCard = ({ title, description, imageUrl }: ProjectCardProps) => {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-xl border border-brand-purple/20 transition-all hover:border-brand-purple/15">
+    <div className="group relative flex flex-col overflow-hidden">
       {/* Project Image */}
       <div className="relative h-64 overflow-hidden bg-accent">
         <Image
-          src={image}
+          src={imageUrl}
           alt={title}
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          className="object-cover transition-transform duration-300 rounded-xl"
           fill
         />
       </div>
 
       {/* Content */}
-      <div className="flex-1 flex flex-col p-6">
-        <h3 className="text-xl font-semibold mb-2 line-clamp-1">{title}</h3>
-        <p className="text-pink-950 mb-4">{description}</p>
+      <div className="flex-1 flex flex-col py-6">
+        <h3 className="mb-4 text-xl font-medium tracking-tight text-card-foreground">
+          {title}
+        </h3>
+        <p className="text-slate-950 text-[15px] mb-4">{description}</p>
       </div>
     </div>
   );
 };
 
-const Works = () => {
-  const projects = [
+const Works = async () => {
+  const projects = await getData<Work[]>(`${baseUrl}/works`);
+
+  const projs = [
     {
       title: "E-commerce Ad Campaign (Facebook + Instagram)",
       description:
@@ -46,12 +51,12 @@ const Works = () => {
         "Boosted a home service company’s website to page 1 of Google for 10+ high-intent keywords, increasing organic traffic by 300% in 6 months.",
       image: "/b2.webp",
     },
-    {
-      title: "Email Funnel for Online Course Launch",
-      description:
-        "Created a 5-email funnel that generated 1,200+ signups in 2 weeks for an online course launch — using storytelling, urgency, and smart segmentation.",
-      image: "/b2.webp",
-    },
+    // {
+    //   title: "Email Funnel for Online Course Launch",
+    //   description:
+    //     "Created a 5-email funnel that generated 1,200+ signups in 2 weeks for an online course launch — using storytelling, urgency, and smart segmentation.",
+    //   image: "/b2.webp",
+    // },
     {
       title: "Social Media Growth for Beauty Brand",
       description:
@@ -63,18 +68,18 @@ const Works = () => {
   return (
     <section id="works" className="relative py-5 px-6">
       <div className="max-w-screen-lg mx-auto">
-        <div className="text-center mb-12">
+        <div className="mb-8">
           <Badge variant="secondary" className="mb-4">
             Works
           </Badge>
-          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
+          <h2 className="max-w-screen-lg mx-auto mb-2 text-2xl font-semibold tracking-tight text-gray-800">
             Featured Work
           </h2>
-          <p className="text-brand-navy mt-2 sm:mt-4 text-xl font-semibold">
+          <p className="text-slate-800 text-lg">
             Showcasing some of my best projects and technical achievements
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

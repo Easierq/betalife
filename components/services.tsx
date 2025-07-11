@@ -50,14 +50,14 @@ const features = [
 const Services = () => {
   return (
     <div id="features" className="w-full py-12 xs:py-20 px-6">
-      <h2 className="text-3xl xs:text-4xl sm:text-5xl font-bold tracking-tight text-center">
+      <h2 className="max-w-screen-lg mx-auto mb-8 text-2xl font-semibold tracking-tight text-gray-800">
         Expose Your Business
       </h2>
-      <div className="w-full max-w-screen-lg mx-auto mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="w-full max-w-screen-lg mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="flex flex-col bg-brand-gray border rounded-xl py-6 px-5"
+            className="flex flex-col bg-transparent border border-slate-100/80 rounded-xl py-6 px-5"
           >
             <div className="mb-3 h-10 w-10 flex items-center justify-center bg-muted rounded-full">
               <feature.icon className="h-6 w-6" />

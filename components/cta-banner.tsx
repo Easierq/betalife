@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function CTABanner() {
   return (
     <div className="px-6">
-      <div className="dark:border relative overflow-hidden my-5 w-full dark bg-background text-foreground max-w-screen-lg mx-auto rounded-2xl py-10 md:py-16 px-6 md:px-14">
+      <div className="relative overflow-hidden my-5 w-full dark bg-sky-300 text-slate-800 max-w-screen-lg mx-auto rounded-2xl py-10 md:py-16 px-6 md:px-14">
         <AnimatedGridPattern
           numSquares={30}
           maxOpacity={0.1}
@@ -19,10 +19,10 @@ export default function CTABanner() {
           )}
         />
         <div className="relative z-0 flex flex-col gap-3">
-          <h3 className="text-3xl md:text-4xl font-semibold">
+          <h3 className="text-3xl sm:text-4xl font-semibold">
             Ready to Level Up Your Marketing?
           </h3>
-          <p className="mt-2 text-base md:text-lg">
+          <p className="mt-2 text-base sm:text-lg">
             Whether you’re launching a new product, scaling your service, or
             need a full marketing revamp — I’m here to help you grow smarter.
           </p>

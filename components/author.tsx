@@ -8,7 +8,7 @@ export default function AuthorAttribution({
   return (
     <div className="flex space-x-1">
       <span>by</span>
-      <p className="font-medium text-brand-navy">Ayomide Dare</p>
+      <p className="font-semibold text-brand-purple">Ayomide Dare</p>
       <span>
         on May 30, 2023
         {/* on {helpers.stringToFriendlyDate(post.metadata.published_date)} */}

@@ -19,7 +19,7 @@ module.exports = {
         "brand-navy": "#2e3192",
         "brand-orange": "#ff7347",
         "brand-pink": "#f7d0e9",
-        "brand-purple": "#692e54",
+        "brand-purple": "#0053E2",
         "brand-gray": "#fffdf9",
 
         border: "hsl(var(--border))",

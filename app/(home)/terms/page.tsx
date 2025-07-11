@@ -3,7 +3,7 @@ import React from "react";
 
 export default function TermsPage() {
   return (
-    <main className="max-w-screen-lg mx-auto px-4 py-12 pt-28 text-brand-purple">
+    <main className="max-w-screen-lg mx-auto px-6 py-12 pt-28 text-slate-800">
       <h1 className="text-3xl font-bold mb-6">Terms & Conditions</h1>
       <section className="space-y-6">
         <div>
@@ -67,7 +67,7 @@ export default function TermsPage() {
           <h2 className="text-xl font-semibold mb-2">7. Contact</h2>
           <p>
             If you have any questions regarding these Terms & Conditions, please
-            contact me at [your-email@example.com].
+            contact me at ayomide@gmail.com.
           </p>
         </div>
       </section>

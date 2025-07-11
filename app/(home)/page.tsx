@@ -3,8 +3,8 @@ import Blogs from "@/components/blogs";
 import CTABanner from "@/components/cta-banner";
 import FAQ from "@/components/faq";
 import Hero from "@/components/hero";
+import HeroTestimonial from "@/components/hero-testimonial";
 import Services from "@/components/services";
-import Testimonial from "@/components/testimonial";
 import Works from "@/components/works";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <Works />
       <Services />
       <Blogs />
-      <Testimonial />
+      <HeroTestimonial />
       <FAQ />
       <CTABanner />
     </div>

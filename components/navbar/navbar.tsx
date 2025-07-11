@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="fixed z-10 top-6 inset-x-4 h-14 bg-brand-pink border border-brand-purple max-w-screen-lg mx-auto rounded-full">
+    <nav className="fixed z-10 top-6 inset-x-4 h-14 bg-white border border-slate-100 backdrop-blur-md bg-opacity-60 max-w-screen-lg mx-auto rounded-full">
       <div className="h-full flex items-center justify-between mx-auto px-3 sm:px-5">
         <Logo />
 
@@ -19,11 +19,11 @@ const Navbar = () => {
           <Button
             asChild
             variant="outline"
-            className="rounded-full border-none bg-brand-purple hover:bg-brand-purple/90 text-white hover:text-white/95"
             size="icon"
+            className="rounded-full border border-slate-200 text-black h-9 w-9"
           >
             <Link href="https://wa.me/message/5564MDZR4ULCL1" target="_blank">
-              <WhatsappLogo className="w-[20px] h-6[20px]" />
+              <WhatsappLogo className="w-[18px] h-[18px]" />
             </Link>
           </Button>
           {/* Mobile Menu */}

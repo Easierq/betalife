@@ -14,9 +14,9 @@ const Contact = () => {
           </p>
         </div>
         <div className="md:grid md:grid-cols-2 md:gap-12">
-          <div className="bg-slate-50/20 borcder border-slate-500 p-6 rounded-md my-2 mb-4">
+          <div className="bg-slate-50/20 p-6 rounded-md my-2 mb-4">
             <p className="mb-2 text-xl font-bold">Marketing</p>
-            <p className="text-brand-purple text-sm">
+            <p className="text-slate-800 text-base">
               Plan it, create it, launch it. Collaborate seamlessly with all the
               organization and hit your marketing goals every month with our
               marketing plan.
@@ -25,9 +25,9 @@ const Contact = () => {
               ayomide@gmail.com
             </p>
           </div>
-          <div className="bg-slate-50/20 borcder border-slate-500 p-6 rounded-md my-2">
+          <div className="bg-slate-50/20 p-6 rounded-md my-2">
             <p className="mb-2 text-xl font-bold">Legal</p>
-            <p className="text-brand-purple text-sm">
+            <p className="text-slate-800 text-base">
               Protect your organization, devices and stay compliant with our
               structured workflows and custom permissions made for you.
             </p>

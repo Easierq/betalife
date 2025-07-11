@@ -19,20 +19,20 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="mt-40 dark bg-background text-foreground">
+    <footer className="mt-40 dark bg-slate-50 text-slate-700">
       <div className="max-w-screen-lg mx-auto">
         <div className="py-12 flex flex-col sm:flex-row items-start justify-between gap-x-8 gap-y-10 px-6 xl:px-0">
           <div>
-            <Link href="/" className="font-semibold text-xl">
-              Betalife.
+            <Link href="/" className="font-semibold text-xl text-brand-purple">
+              iBetalife.
             </Link>
 
-            <ul className="mt-6 flex items-center gap-4 flex-wrap">
+            <ul className="mt-6 flex items-center gap-4 flex-wrap text-slate-700">
               {footerLinks.map(({ title, href }) => (
                 <li key={title}>
                   <Link
                     href={href}
-                    className="text-muted-foreground text-sm hover:text-foreground font-semibold"
+                    className="text-sm hover:text-foreground font-semibold"
                   >
                     {title}
                   </Link>
@@ -41,10 +41,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <Separator />
+        <Separator className="bg-slate-300" />
         <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
           {/* Copyright */}
-          <span className="text-muted-foreground text-center text-sm sm:text-start">
+          <span className="text-slate-800 text-center text-sm sm:text-start">
             &copy; {new Date().getFullYear()}{" "}
             <Link href="/" target="_blank">
               Betalife
@@ -52,7 +52,7 @@ const Footer = () => {
             . All rights reserved.
           </span>
 
-          <div className="flex items-center gap-5 text-muted-foreground">
+          <div className="flex items-center gap-5 text-slate-600">
             <Link
               href="https://www.tiktok.com/@creativedreyy?_t=ZS-8xfjLFcuiST&_r=1"
               target="_blank"
