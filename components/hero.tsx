@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative h-[80vh] min-h-[75vh] sm:min-h-[80vh] flex items-center justify-center px-6 pt-24 pb-7 overflow-hidden">
+    <div className="relative h-[92vh] sm:h-[80vh] flex items-center justify-center px-6 pt-24 pb-7 overflow-hidden">
       <div className="absolute bottom-auto left-auto right-0 sm:right-1/4 top-4 h-[240px] sm:h-[300px] w-[240px] sm:w-[300px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[#ff5a4a]/40 opacity-50 blur-[80px]"></div>
       <div className="absolute left-0 sm:left-1/4 right-auto top-10 h-[240px] sm:h-[300px] w-[240px] sm:w-[300px] -translate-x-[30%] translate-y-[20%] rounded-full bg-yellow-100 opacity-50 blur-[80px]"></div>
 
