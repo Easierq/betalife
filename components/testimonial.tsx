@@ -58,13 +58,9 @@ const Testimonials = ({ data }: Props) => {
               <button
                 key={index}
                 onClick={() => api?.scrollTo(index)}
-                className={cn(
-                  "h-3.5 w-3.5 rounded-full border border-brand-purple",
-                  {
-                    "bg-brand-purple border-brandbg-brand-purple":
-                      current === index + 1,
-                  }
-                )}
+                className={cn("h-2 w-2 rounded-full bg-slate-300", {
+                  "bg-slate-700 h-3 w-3 rounded-full": current === index + 1,
+                })}
               />
             ))}
           </div>

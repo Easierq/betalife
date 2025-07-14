@@ -4,8 +4,10 @@ import Link from "next/link";
 import { Badge } from "./ui/badge";
 import { getData } from "@/lib/get-data";
 import { Blog } from "@/types";
+import helpers from "@/helpers";
 
-// const blogs = [
+export const revalidate = 0;
+
 //   {
 //     title: "The Hidden Power of Funnel-Based Marketing",
 //     subtitle:
@@ -61,7 +63,7 @@ import { Blog } from "@/types";
 const baseUrl = "https://ibetalife-admin.vercel.app/api";
 
 const Blogs = async () => {
-  const blogs = await getData<Blog[]>(`${baseUrl}/works`);
+  const blogs = await getData<Blog[]>(`${baseUrl}/blogs`);
 
   return (
     <div id="blogs" className="w-full py-12 xs:py-20 px-6">
@@ -92,7 +94,7 @@ const Blogs = async () => {
                 </div>
               </CardHeader>
               <CardContent className="pt-4 pb-5 px-3">
-                <Badge>{blog.category}</Badge>
+                <Badge className="capitalize">{blog.category}</Badge>
                 <Link href={`/blogs/${blog.id}`}>
                   <h3 className="mt-4 text-xl font-medium tracking-tight hover:underline">
                     {blog.title}
@@ -100,7 +102,9 @@ const Blogs = async () => {
                 </Link>
 
                 <div className="mt-2">
-                  <span className="text-slate-700 text-sm">Nov 30, 2024</span>
+                  <span className="text-slate-700 text-sm">
+                    {helpers.stringToFriendlyDate(blog.createdAt)}
+                  </span>
                 </div>
               </CardContent>
             </Card>

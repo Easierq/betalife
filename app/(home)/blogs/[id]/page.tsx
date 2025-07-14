@@ -18,7 +18,7 @@ const DetailsPage = async ({ params: { id } }: Props) => {
           {post && <Link href={`/blogs/${post.id}`}>{post.title}</Link>}
         </h2>
         <img
-          className="mb-5 h-[360px] sm:h-[500px] w-full bg-no-repeat object-cover object-center rounded-lg"
+          className="mb-5 h-[360px] sm:h-[500px] w-full bg-slate-300 bg-no-repeat object-cover object-center rounded-lg"
           src={post.imageUrl}
           alt={post.title}
         />
@@ -43,10 +43,12 @@ const DetailsPage = async ({ params: { id } }: Props) => {
                       src="/img.jpeg"
                       alt={post.title}
                     />
-                    <AuthorAttribution />
+                    <AuthorAttribution date={post.createdAt} />
                   </div>
-                  <hr className="w-full border-t border-slate-500 text-slate-800 pb-8" />
-                  <p className="leading-normal">{post.description}</p>
+                  {/* <hr className="w-full border-t border-slate-500 text-slate-800 pb-8" /> */}
+                  <p className="leading-normal text-base sm:text-lg">
+                    {post.description}
+                  </p>
                 </>
               )}
             </div>
