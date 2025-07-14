@@ -66,7 +66,7 @@ const Works = async () => {
   ];
 
   return (
-    <section id="works" className="relative py-5 px-6">
+    <section id="works" className="relative py-2 px-6">
       <div className="max-w-screen-lg mx-auto">
         <div className="mb-8">
           <Badge variant="secondary" className="mb-4">

@@ -5,13 +5,16 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-[70vh] sm:min-h-[80vh] flex items-center justify-center px-6 pt-24 overflow-hidden">
+    <div className="relative h-[80vh] min-h-[75vh] sm:min-h-[80vh] flex items-center justify-center px-6 pt-24 pb-7 overflow-hidden">
+      <div className="absolute bottom-auto left-auto right-0 sm:right-1/4 top-4 h-[240px] sm:h-[300px] w-[240px] sm:w-[300px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[#ff5a4a]/40 opacity-50 blur-[80px]"></div>
+      <div className="absolute left-0 sm:left-1/4 right-auto top-10 h-[240px] sm:h-[300px] w-[240px] sm:w-[300px] -translate-x-[30%] translate-y-[20%] rounded-full bg-yellow-100 opacity-50 blur-[80px]"></div>
+
       <div className="relative z-[1] text-center max-w-screen-lg">
         <Badge className="rounded-full font-medium border-none py-2 px-3 bg-brand-orange hover:bg-brand-lime transition">
           <BadgeDollarSign className="fill-current h-4 w-4 mr-1" />
           Digital Marketer
         </Badge>
-        <h1 className="mt-6 text-4xl font-medium text-slate-800">
+        <h1 className="mt-6 text-4xl lg:text-5xl font-medium text-slate-800">
           Grow Your Brand. Amplify Your Impact.
         </h1>
         <p className="mt-6 text-xl text-slate-600 w-[90%] sm:w-[70%] mx-auto">

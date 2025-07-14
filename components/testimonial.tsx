@@ -90,14 +90,19 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
         <p className="mt-6 text-lg sm:text-xl leading-normal lg:!leading-normal font-semibold tracking-tight text-slate-700">
           &quot;{testimonial.testimonial}&quot;
         </p>
-        <div className="flex sm:hidden md:flex mt-6 items-center gap-4">
+        <div className="flex sm:hidden md:flex mt-6 items-center gap-2">
           <Avatar>
             <AvatarFallback className="text-xl font-medium bg-primary text-primary-foreground">
               {testimonial.name.charAt(0)}
             </AvatarFallback>
           </Avatar>
           <div>
-            <p className="text-base font-semibold">{testimonial.name}</p>
+            <p className="text-base font-semibold text-slate-800">
+              {testimonial.name}
+            </p>
+            <p className="text-sm font-medium text-slate-600">
+              {testimonial.profession}
+            </p>
           </div>
         </div>
       </div>

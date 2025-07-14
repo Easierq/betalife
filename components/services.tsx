@@ -49,7 +49,7 @@ const features = [
 
 const Services = () => {
   return (
-    <div id="features" className="w-full py-12 xs:py-20 px-6">
+    <div id="features" className="w-full py-7 px-6">
       <h2 className="max-w-screen-lg mx-auto mb-8 text-2xl font-semibold tracking-tight text-gray-800">
         Expose Your Business
       </h2>

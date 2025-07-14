@@ -72,7 +72,7 @@ const Blogs = async () => {
           </h2>
           <Link
             href="/blogs"
-            className="text-slate-600 bg-slate-100/80 px-4 py-2 border border-slate-200 rounded-full hover:underline font-bold"
+            className="text-slate-600 bg-slate-100/80 px-4 py-2 border border-slate-200 rounded-full hover:bg-slate-800 hover:text-slate-100 hover:underline transition-all font-bold"
           >
             View all
           </Link>
@@ -92,7 +92,7 @@ const Blogs = async () => {
                 </div>
               </CardHeader>
               <CardContent className="pt-4 pb-5 px-3">
-                <Badge>Business</Badge>
+                <Badge>{blog.category}</Badge>
                 <Link href={`/blogs/${blog.id}`}>
                   <h3 className="mt-4 text-xl font-medium tracking-tight hover:underline">
                     {blog.title}

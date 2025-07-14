@@ -23,8 +23,11 @@ const Footer = () => {
       <div className="max-w-screen-lg mx-auto">
         <div className="py-12 flex flex-col sm:flex-row items-start justify-between gap-x-8 gap-y-10 px-6 xl:px-0">
           <div>
-            <Link href="/" className="font-semibold text-xl text-brand-purple">
-              iBetalife.
+            <Link
+              href="/"
+              className="font-bold uppercase text-xl text-brand-purple"
+            >
+              Ayomide.
             </Link>
 
             <ul className="mt-6 flex items-center gap-4 flex-wrap text-slate-700">
@@ -32,7 +35,7 @@ const Footer = () => {
                 <li key={title}>
                   <Link
                     href={href}
-                    className="text-sm hover:text-foreground font-semibold"
+                    className="text-sm hover:opacity-90 font-semibold"
                   >
                     {title}
                   </Link>
@@ -47,7 +50,7 @@ const Footer = () => {
           <span className="text-slate-800 text-center text-sm sm:text-start">
             &copy; {new Date().getFullYear()}{" "}
             <Link href="/" target="_blank">
-              Betalife
+              Ayomide.
             </Link>
             . All rights reserved.
           </span>

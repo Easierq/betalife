@@ -5,7 +5,7 @@ import { HTMLAttributes } from "react";
 
 const About = () => {
   return (
-    <section id="about" className="relative py-5 px-6">
+    <section id="about" className="relative py-2 px-6">
       <div className="max-w-screen-lg mx-auto">
         <div className="flex flex-col md:flex-row-reverse gap-12">
           <ProfileImage className="hidden md:block" />
@@ -16,13 +16,13 @@ const About = () => {
               About Me
             </Badge>
             <ProfileImage className="mt-3 mb-8 block md:hidden" />
-            <h2 className="text-4xl font-bold mb-4 tracking-tight">
+            <h2 className="text-3xl font-semibold mb-3 tracking-tight">
               Ayomide Dare
             </h2>
-            <h2 className="text-2xl font-semibold text-slate-800 mb-4 tracking-tight">
+            <h2 className="text-[22px] sm:text-2xl font-medium text-slate-800 mb-3 tracking-tight">
               Passionate about creating impactful web experiences
             </h2>
-            <p className="text-gray-700 mb-6 text-justify">
+            <p className="text-gray-700 sm:text-lg mb-3 text-justify">
               Hi, I’m a results-driven digital marketer with a passion for
               turning traffic into loyal customers. Over the years, I’ve worked
               with startups, brands, and entrepreneurs to build data-backed

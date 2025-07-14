@@ -88,7 +88,7 @@ const DetailsPage = async () => {
                 </div>
               </CardHeader>
               <CardContent className="pt-4 pb-5 px-3">
-                <Badge>Business</Badge>
+                <Badge>{blog.createdAt}</Badge>
                 <Link href={`/blogs/${blog.id}`}>
                   <h3 className="mt-4 text-xl font-medium tracking-tight hover:underline">
                     {blog.title}

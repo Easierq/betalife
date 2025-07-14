@@ -5,6 +5,6 @@ export const Logo = () => (
     href="/"
     className="font-bold text-lg text-brand-purple uppercase tracking-wide"
   >
-    <span className="lowercase">i</span>Betalife.
+    Ayomide.
   </Link>
 );

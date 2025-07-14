@@ -14,7 +14,7 @@ const poppins = Poppins({
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "iBetalife",
+  title: "Ayomide | Digital Marketer Expert",
   description: "Digital Marketing Solutions",
 };
 
